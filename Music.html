@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMV | Videos</title>
+    <link rel="stylesheet" href="css/master2.css">
+    <link rel="icon" href="https://ramshard.com/assets/img/icons/clock.png">
+  </head>
+  <body>
+    <div class="header">
+      <img src="http://www.sclance.com/pngs/gold-music-notes-png/gold_music_notes_png_583706.png" alt="music" style="width: 500px;">
+    </div>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="Fun.html">BMV</a>
+      <a href="Music.html">Music</a>
+    </div>
+    <div class="content">
+      <center>
+        <br><br>
+      <h3>Quinn XCII - New Wave</h3>
+      <audio id="myAudio" controls style="width: 500px;">
+        <source src="music/New_Wave.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <hr><br><br>
+      <h3>Jesse Warren - Don't Look Down</h3>
+      <audio id="myAudio" controls style="width: 500px;">
+        <source src="music/Dont_Look_Down.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <hr><br><br>
+      <h3 hidden>Jacob Tillberg - Heartless</h3>
+      <h4>Coming Soon...</h4>
+      <audio id="myAudio" controls style="width: 500px;">
+        <source src="music/Heartless.mp3(remove this)" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <hr><br><br>
+      <h3 hidden>Bazanji - Everything Will Be Fine</h3>
+      <h4>Coming Soon...</h4>
+      <audio id="myAudio" controls style="width: 500px;">
+        <source src="music/Everything_Will_Be_Fine.mp3(remove this)" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+      <hr><br><br>
+      <h3 hidden>Quinn XCII - Good Friend</h3>
+      <h4>Coming Soon...</h4>
+      <audio id="myAudio" controls style="width: 500px;">
+        <source src="music/Good_Friend.mp3(remove this)" type="audio/mpeg">
+          Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
